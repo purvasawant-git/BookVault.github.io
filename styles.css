@@ -153,6 +153,41 @@ body, html {
   color: white;
 }
 
+/* Mobile Navigation Improvements */
+@media (max-width: 768px) {
+  .navbar-nav {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-right: 0;
+  }
+  
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 12px;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+  }
+  
+  .btn-orange {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* Logo Box */
 .logo-box {
   position: absolute;
@@ -1244,5 +1279,988 @@ footer {
   
   .category-overlay h4 {
     font-size: 1.1rem;
+  }
+}
+
+/* Enhanced Responsive Design */
+/* Large Tablets and Small Laptops */
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .readers-choice .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .author-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  
+  .image-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero h5 {
+    font-size: 1.1rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+  
+  .readers-choice .grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .text-card {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .author-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .grid-item.featured {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .team-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .team-member {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .marquee-wrapper .grid-item {
+    width: 200px;
+    height: 250px;
+  }
+  
+  .marquee-wrapper .grid-item img {
+    width: 180px;
+    height: 230px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .loader-container {
+    padding: 0 20px;
+  }
+  
+  .countdown {
+    font-size: 1.5rem;
+  }
+  
+  .main-text {
+    font-size: 1.2rem;
+  }
+  
+  .bottom-text {
+    font-size: 0.9rem;
+  }
+  
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .logo-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logo-box img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+  }
+  
+  .hero {
+    height: 70vh;
+    padding: 60px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  
+  .readers-choice {
+    padding: 40px 15px;
+  }
+  
+  .readers-choice .grid {
+    gap: 20px;
+  }
+  
+  .text-card h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .text-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-card h3 {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .card img {
+    height: 180px;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+    margin: 12px 8px 8px;
+  }
+  
+  .badge {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .summary {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .authors-section {
+    padding: 40px 15px;
+  }
+  
+  .authors-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .author-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .author-card {
+    text-align: center;
+  }
+  
+  .author-pic-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+  }
+  
+  .author-pic {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .author-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .author-info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .gallery {
+    padding: 40px 15px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1rem;
+  }
+  
+  .image-grid {
+    gap: 15px;
+  }
+  
+  .grid-item.featured {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .grid-item.medium {
+    grid-column: 1;
+  }
+  
+  .grid-item.small {
+    grid-column: 1;
+  }
+  
+  .slideshow-controls {
+    bottom: 15px;
+    padding: 0 15px;
+  }
+  
+  .slideshow-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+  
+  .slideshow-dots {
+    gap: 8px;
+  }
+  
+  .slideshow-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .image-overlay h3 {
+    font-size: 1.3rem;
+  }
+  
+  .image-overlay h4 {
+    font-size: 1.1rem;
+  }
+  
+  .image-overlay p {
+    font-size: 0.9rem;
+  }
+  
+  .shop-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+  
+  .fashion-grid-section {
+    padding: 30px 15px;
+  }
+  
+  .fashion-grid-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .fashion-grid-header p {
+    font-size: 1rem;
+  }
+  
+  .marquee-wrapper {
+    padding: 30px 0;
+  }
+  
+  .marquee-wrapper .grid-item {
+    width: 150px;
+    height: 200px;
+    margin: 0 10px;
+  }
+  
+  .marquee-wrapper .grid-item img {
+    width: 130px;
+    height: 180px;
+  }
+  
+  .team-section {
+    padding: 40px 15px;
+  }
+  
+  .team-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .team-list {
+    gap: 20px;
+  }
+  
+  .team-member {
+    padding: 20px 15px;
+  }
+  
+  .member-number {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .member-name {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .member-role {
+    font-size: 0.9rem;
+  }
+  
+  .member-popup {
+    width: 120px;
+    height: 120px;
+    right: -130px;
+    top: -10px;
+  }
+  
+  .popup-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .cookie-consent {
+    padding: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+  }
+  
+  .cookie-content p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .cookie-buttons {
+    gap: 10px;
+  }
+  
+  .btn-decline,
+  .btn-accept {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .book-categories {
+    padding: 40px 15px;
+  }
+  
+  .book-categories h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .category-img {
+    height: 180px;
+  }
+  
+  .category-overlay {
+    padding: 15px 10px 10px;
+  }
+  
+  .category-overlay h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .category-overlay p {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .book-count {
+    padding: 3px 8px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .loader-container {
+    padding: 0 15px;
+  }
+  
+  .countdown {
+    font-size: 1.2rem;
+  }
+  
+  .main-text {
+    font-size: 1rem;
+  }
+  
+  .bottom-text {
+    font-size: 0.8rem;
+  }
+  
+  .navbar {
+    padding: 8px 10px;
+  }
+  
+  .logo-box img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .logo-text {
+    font-size: 1rem;
+  }
+  
+  .hero {
+    height: 60vh;
+    padding: 40px 15px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  
+  .hero h5 {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  .hero p {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  
+  .btn-orange {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .readers-choice {
+    padding: 30px 10px;
+  }
+  
+  .text-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .text-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .text-card h3 {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .card {
+    padding: 12px;
+  }
+  
+  .card img {
+    height: 150px;
+  }
+  
+  .title {
+    font-size: 1rem;
+    margin: 10px 6px 6px;
+  }
+  
+  .badge {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+  }
+  
+  .summary {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  
+  .authors-section {
+    padding: 30px 10px;
+  }
+  
+  .authors-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .author-pic-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 12px;
+  }
+  
+  .author-pic {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .author-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  
+  .author-info p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  .gallery {
+    padding: 30px 10px;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  
+  .image-grid {
+    gap: 12px;
+  }
+  
+  .slideshow-controls {
+    bottom: 10px;
+    padding: 0 10px;
+  }
+  
+  .slideshow-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .slideshow-dots {
+    gap: 6px;
+  }
+  
+  .slideshow-dot {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .image-overlay h3 {
+    font-size: 1.1rem;
+  }
+  
+  .image-overlay h4 {
+    font-size: 1rem;
+  }
+  
+  .image-overlay p {
+    font-size: 0.8rem;
+  }
+  
+  .shop-btn {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+  
+  .fashion-grid-section {
+    padding: 25px 10px;
+  }
+  
+  .fashion-grid-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .fashion-grid-header p {
+    font-size: 0.9rem;
+  }
+  
+  .marquee-wrapper {
+    padding: 25px 0;
+  }
+  
+  .marquee-wrapper .grid-item {
+    width: 120px;
+    height: 160px;
+    margin: 0 8px;
+  }
+  
+  .marquee-wrapper .grid-item img {
+    width: 100px;
+    height: 140px;
+  }
+  
+  .team-section {
+    padding: 30px 10px;
+  }
+  
+  .team-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .team-member {
+    padding: 15px 12px;
+  }
+  
+  .member-number {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+  
+  .member-name {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  
+  .member-role {
+    font-size: 0.8rem;
+  }
+  
+  .member-popup {
+    width: 100px;
+    height: 100px;
+    right: -110px;
+    top: -5px;
+  }
+  
+  .popup-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cookie-consent {
+    padding: 12px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  
+  .cookie-content p {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .cookie-buttons {
+    gap: 8px;
+  }
+  
+  .btn-decline,
+  .btn-accept {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .book-categories {
+    padding: 30px 10px;
+  }
+  
+  .book-categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  
+  .category-img {
+    height: 150px;
+  }
+  
+  .category-overlay {
+    padding: 12px 8px 8px;
+  }
+  
+  .category-overlay h4 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  
+  .category-overlay p {
+    font-size: 0.7rem;
+    margin-bottom: 6px;
+  }
+  
+  .book-count {
+    padding: 2px 6px;
+    font-size: 0.6rem;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero h5 {
+    font-size: 0.8rem;
+  }
+  
+  .hero p {
+    font-size: 0.8rem;
+  }
+  
+  .text-card h1 {
+    font-size: 1.6rem;
+  }
+  
+  .text-card h2 {
+    font-size: 1.2rem;
+  }
+  
+  .text-card h3 {
+    font-size: 0.85rem;
+  }
+  
+  .card img {
+    height: 130px;
+  }
+  
+  .title {
+    font-size: 0.9rem;
+  }
+  
+  .authors-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .author-pic-container {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .author-pic {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .author-info h3 {
+    font-size: 1rem;
+  }
+  
+  .author-info p {
+    font-size: 0.75rem;
+  }
+  
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .team-title {
+    font-size: 1.6rem;
+  }
+  
+  .member-number {
+    font-size: 1.3rem;
+  }
+  
+  .member-name {
+    font-size: 0.9rem;
+  }
+  
+  .member-role {
+    font-size: 0.75rem;
+  }
+  
+  .book-categories h2 {
+    font-size: 1.6rem;
+  }
+  
+  .category-img {
+    height: 120px;
+  }
+  
+  .category-overlay h4 {
+    font-size: 0.8rem;
+  }
+  
+  .category-overlay p {
+    font-size: 0.65rem;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .hero h5 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .hero p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .readers-choice {
+    padding: 20px 15px;
+  }
+  
+  .authors-section {
+    padding: 20px 15px;
+  }
+  
+  .gallery {
+    padding: 20px 15px;
+  }
+  
+  .team-section {
+    padding: 20px 15px;
+  }
+  
+  .book-categories {
+    padding: 20px 15px;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-box img,
+  .author-pic,
+  .popup-image,
+  .category-img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .loader-section,
+  .navbar,
+  .cookie-consent,
+  .marquee-wrapper {
+    display: none !important;
+  }
+  
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .readers-choice,
+  .authors-section,
+  .gallery,
+  .team-section,
+  .book-categories {
+    padding: 20px;
+  }
+  
+  .card,
+  .author-card,
+  .category-card {
+    break-inside: avoid;
+    margin-bottom: 20px;
+  }
+}
+
+/* Touch-Friendly Improvements */
+@media (hover: none) and (pointer: coarse) {
+  .card:hover,
+  .author-card:hover,
+  .category-card:hover,
+  .team-member:hover {
+    transform: none;
+  }
+  
+  .card:active,
+  .author-card:active,
+  .category-card:active,
+  .team-member:active {
+    transform: scale(0.98);
+  }
+  
+  .slideshow-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .shop-btn,
+  .btn-orange {
+    min-height: 44px;
+    padding: 12px 20px;
+  }
+  
+  .slideshow-dot {
+    min-width: 12px;
+    min-height: 12px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus Improvements for Accessibility */
+.nav-link:focus,
+.btn:focus,
+.card:focus,
+.author-card:focus,
+.category-card:focus,
+.team-member:focus {
+  outline: 2px solid #FF6B35;
+  outline-offset: 2px;
+}
+
+/* Loading States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Better Touch Targets */
+@media (max-width: 768px) {
+  .nav-link,
+  .btn,
+  .card,
+  .author-card,
+  .category-card,
+  .team-member {
+    min-height: 44px;
+  }
+  
+  .slideshow-btn {
+    min-width: 48px;
+    min-height: 48px;
+  }
+  
+  .slideshow-dot {
+    min-width: 16px;
+    min-height: 16px;
   }
 } 
