@@ -224,16 +224,14 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👥 Team
 
-- **Sarah Johnson** - Founder & CEO
-- **Michael Chen** - Head of Technology
-- **Emily Rodriguez** - Creative Director
-- **David Kim** - Marketing Manager
-- **Lisa Thompson** - Content Curator
+- **Harsh Rane** - Team Lead
+- **Purva Sawant** - Associate
 
 ## 📞 Support
 
 For questions or support, please contact the development team or create an issue in the repository.
 
 ---
+
 
 **BookVault** - Where Book Lovers Belong 📚✨ 
